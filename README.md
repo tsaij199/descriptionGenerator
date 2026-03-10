@@ -23,7 +23,7 @@
     .\venv\Scripts\Activate.ps1
     ```
 3. **Setup OpenAI API**
-    Create a file named `.env` inside `a_server` with:
+    - Create a file named `.env` inside `a_server` with:
     ```sh
     OPENAI_API_KEY=your_api_key_here
     ```
@@ -36,12 +36,12 @@
     python server.py
     ```
 6. **Install dependencies for frontend**
-    Open a new terminal and run:
+    - Open a new terminal and run:
     ```sh
     cd a_client
     npm install
     ```
-7. **Start development server**
+8. **Start development server**
     ```sh
     npm start
     ```
