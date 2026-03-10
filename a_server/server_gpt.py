@@ -1,4 +1,3 @@
-import os
 import openai
 from flask_cors import CORS
 from flask import Flask, request, jsonify
@@ -7,8 +6,8 @@ import serverFcns
 app = Flask(__name__)
 CORS(app)
 
-OPENAI_API_KEY = "sk-proj-OvBsXRzXMiQOFdQoEnarT3BlbkFJYEFRAAK53FGD8RT9Agj5"
-os.environ["OPENAI_API_KEY"] = OPENAI_API_KEY
+from dotenv import load_dotenv
+load_dotenv()
 
 @app.route('/generate-description', methods=['POST'])
 def gen_description():
