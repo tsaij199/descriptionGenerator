@@ -12,15 +12,15 @@
 2. **Create and activate virtual environment**
     ```sh
     cd a_server
-    python3 -m venv venv
+    python3 -m venv .venv
     ```
     - Mac / Linux / WSL:
     ```sh
-    source venv/bin/activate
+    source .venv/bin/activate
     ```
     - Windows PowerShell:
     ```sh
-    .\venv\Scripts\Activate.ps1
+    .\.venv\Scripts\Activate.ps1
     ```
 3. **Setup OpenAI API**
     - Create a file named `.env` inside `a_server` with:
