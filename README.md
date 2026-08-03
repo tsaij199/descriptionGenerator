@@ -5,7 +5,7 @@ A full-stack topic description generator built with React, Flask, and the OpenAI
 Users can enter a topic and optional customization instructions to generate a tailored description, 
 create a shorter summary, export content as a PDF, and explore five AI-generated related topics.
 
-The React frontend sends requests to Flask REST API endpoints, while GPT-3.5-Turbo is responsible for content generation.
+React frontend sends requests to Flask REST API endpoints, while GPT-3.5-Turbo is responsible for content generation.
 
 ## Requirements
 - Node.js 20 (newer versions may break)
