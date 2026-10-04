@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Description Generator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Description Generator</h1>
+        
+        <div class="form-group">
+            <label for="queryInput">Topic / Query:</label>
+            <input type="text" id="queryInput" placeholder="e.g., Quantum Physics">
+        </div>
+
+        <div class="form-group">
+            <label for="customizationInput">Customization (Optional):</label>
+            <input type="text" id="customizationInput" placeholder="e.g., funny, formal, ELI5">
+        </div>
+
+        <button id="descBtn">Generate Description</button>
+
+        <div class="section" id="descSection">
+            <h3>Description</h3>
+            <div id="descResult" class="output-box">Ready for your topic...</div>
+            <button id="summaryBtn" style="margin-top: 10px;" disabled>Summarize Description</button>
+        </div>
+
+        <div class="section" id="summarySection" style="display: none;">
+            <h3>Summary</h3>
+            <div id="summaryResult" class="output-box"></div>
+        </div>
+
+        <div class="section" id="topicsSection">
+            <h3>Related Topics</h3>
+            <button id="topicsBtn" disabled>Get Related Topics</button>
+            <ul id="topicsResult"></ul>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='index.js') }}"></script>
+</body>
+</html>
